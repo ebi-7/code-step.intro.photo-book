@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* 日本語 */
+
+$colorBg :#F4F9FF;
+$colorFont: #333;
+
+
+// common
+html{
+    font-size: 62.5%;
+}
+body{
+    color: $colorFont;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background: $colorBg;
+}
+a{
+    color: $colorFont;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align:bottom;
+}
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.inner,footer{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 8%;
+}
+
+header,section,footer{
+    margin-top: 72px;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: .8em;
+}
+
+
+// header
+header{
+    .logo{
+        display: block;
+        width: 180px;
+        padding-left: 16px;
+    }
+
+}
+
+// main
+main{
+    .hero{
+        margin-top: 16px;
+        padding:0 16px;
+    }
+
+       .index{
+        background: white ;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        ol{
+            list-style: decimal;
+            padding-left: 1em;
+            li{
+                margin-bottom: .8em;
+            }
+        }
+    }
+
+    .detail{
+        h3{
+            font-size: 1.8rem;
+            font-weight: bold;
+            padding: 1.6em 0;
+        }
+
+        dl{
+            border-top: 1px rgb(216, 209, 209) solid ;
+            border-bottom: 1px rgb(216, 209, 209) solid ;
+
+            font-size: 1.4rem;
+            padding: 1em 0;
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 1.6em;
+
+            
+            dt{
+                font-weight: normal;
+                width: 25%;
+            }
+            dd{
+                width: 75%;
+            }
+
+        }
+
+        p{
+            margin-top: 2em;
+            line-height: 1.6em;
+            a{
+                text-decoration: underline;
+
+            }
+        }
+
+    }
+}
+
+
+// footer
+footer{
+    padding-top: 2em;
+    p{
+        font-size: 1.2rem;
+
+    }
+}
+
+
+@media(min-width:800px){
+    .inner,footer{
+        padding: 0;
+    }
+    header{
+        .logo{
+            padding-left: 0;
+        }
+    }
+// header
+    main{
+        .hero{
+            padding:0 ;
+        }
+
+        .detail{
+            .block{
+                display: flex;
+                justify-content: space-between;
+                .img{
+                    width: 48%;
+                }
+                .text{
+                    width: 48%;
+                }
+            }
+        }
+    }
+    // main
+
+    footer{
+        text-align: center;
+        margin-top: 140px;
+    }
+}
+
